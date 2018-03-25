@@ -6,6 +6,3 @@ var server = app.listen(app.get("port"),()=>{
 });
 app.use("/",express.static('public_html'))
 app.use(require('./Get'));
-app.get("/home",(req,res)=>{
-  res.send("Get")
-});
